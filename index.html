@@ -12,13 +12,14 @@
 <body>
     <div class="app-container">
     <header>
-        <input type="search" placeholder="Enter a city..." required class="search-form" />
+        <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input" />
         <input type="submit" value="search" class="search-button"/>
     </header>
     <main>
         <div class="weather-info">
         <div>
-        <h1 class="weather-place">Johannesburg</h1>
+        <h1 class="weather-place" id="place">Johannesburg</h1>
         <p class="weather-details">Tuesday 19:01, Scattered clouds
         <br/>
         Humidity: <strong>60%</strong>, Wind: <strong>3.13km/h</strong>
@@ -36,6 +37,7 @@
     <a href="https://github.com/Phumelele-17/appweather" target="_blank">GitHub</a> and website hosted on
     <a href="https://appweatherconditions.netlify.app/" target="_blank">Netlify</a>
 </footer>
+<script src="index.js"></script>
 </div>
 </body>
 </html>
