@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=PT+Mono&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="app-container">
     <header>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
+        <input type="search" placeholder="Enter a city..." required class="search-form" />
+        <input type="submit" value="search" class="search-button"/>
     </header>
     <main>
+        <div class="weather-info">
         <div>
-        <h1>Johannesburg</h1>
-        <p>Tuesday 19:01, scattered clouds
+        <h1 class="weather-place">Johannesburg</h1>
+        <p class="weather-details">Tuesday 19:01, Scattered clouds
         <br/>
-        Humidity: 60%, Wind: 3.13km/h
+        Humidity: <strong>60%</strong>, Wind: <strong>3.13km/h</strong>
     </p>
 </div>
-    <div>⛅ 11°C/</div>
+    <div class="weather-app-temp-container">
+    <div class="weather-app-icon">⛅</div>
+    <div class="weather-app-value">11</div>
+    <div class="weather-app-unit">°C</div>
+    </div>
+</div>
 </main>
 <footer>Coded by
     <a href="https://github.com/Phumelele-17" target="_blank"> Phumelele Bhuda</a>, code hosted on 
     <a href="https://github.com/Phumelele-17/appweather" target="_blank">GitHub</a> and website hosted on
     <a href="https://appweatherconditions.netlify.app/" target="_blank">Netlify</a>
 </footer>
+</div>
 </body>
 </html>
