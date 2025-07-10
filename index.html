@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=PT+Mono&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,14 +21,16 @@
         <div class="weather-info">
         <div>
         <h1 class="weather-place" id="place">Johannesburg</h1>
-        <p class="weather-details">Tuesday 19:01, Scattered clouds
+        <p class="weather-details">
+            <span id="time"></span> 
+                <span id="description"></span>
         <br/>
-        Humidity: <strong>60%</strong>, Wind: <strong>3.13km/h</strong>
+        Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
     </p>
 </div>
     <div class="weather-app-temp-container">
     <div class="weather-app-icon">⛅</div>
-    <div class="weather-app-value">11</div>
+    <div class="weather-app-value" id="temperature">11</div>
     <div class="weather-app-unit">°C</div>
     </div>
 </div>
